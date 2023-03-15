@@ -21,7 +21,7 @@
                         bindings = <
    &kp ESC   &kp Y &kp L &kp O   &kp V &kp SEMI &kp SQT &kp B  &kp I     &kp D   &kp K  &kp BSPC
    &kp TAB   &kp F &kp R &kp E   &kp S &kp W    &kp Q   &kp N  &kp A     &kp T   &kp U  &kp DEL
-   &kp LCTRL &kp G &kp M &kp DOT &kp C &kp X    &kp J   &kp H  &kp COMMA &kp P   &kp Z  &kp ESC
+   &kp LCTRL &kp G &kp M &kp DOT &kp C &kp X    &kp J   &kp H  &kp COMMA &kp P   &kp Z  &my RCTRL ESC
                 &kp LGUI &lt 1 LALT &mt LSHFT RET     &kp SPACE &lt 2 RALT &kp RSHFT
                         >;
                 };
@@ -48,7 +48,7 @@
                         bindings = <
    &kp ESC   &trans    &kp RBRC  &kp RBKT  &kp RPAR &kp DLLR      &kp EQUAL &kp LPAR  &kp LBKT  &kp LBRC  &kp STAR &kp DEL
    &kp TAB   &trans    &kp LCTRL &kp LALT  &kp LGUI &trans        &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp AT   &kp GRAVE
-   &kp LCTRL &kp TILDE &kp PIPE  &kp AMPS  &kp HASH &kp CARET     &kp PLUS  &kp MINUS &kp UNDER &kp FSLH &kp BSLH &kp RCTLR
+   &kp LCTRL &kp TILDE &kp PIPE  &kp AMPS  &kp HASH &kp CARET     &kp PLUS  &kp MINUS &kp UNDER &kp FSLH  &kp BSLH &kp RCTRL
                 &kp LGUI &mo 1 &mt LSHFT RET     &kp SPACE &mo 2 RALT &kp RSHFT
                         >;
                 };
