@@ -60,9 +60,9 @@
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &trans    &trans    &trans  &trans  &kp RPAR &kp DLLR     &bt BT_CLR &bt BT_NXT  &bt BT_PRV  &kp LBRC  &kp STAR &kp DEL
-   &kp TAB   &trans    &kp LCTRL &kp LALT  &kp LGUI &trans       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2 &kp RIGHT &kp AT   &kp GRAVE
-   &kp LCTRL &kp TILDE &kp PIPE  &kp AMPS  &kp HASH &kp CARET     &kp PLUS  &kp MINUS &kp UNDER &kp FSLH  &kp BSLH &kp RCTRL
+   &trans    &kp LS(LG(N4)) &trans &trans &trans &bt BT_CLR    &bt BT_CLR    &bt BT_NXT    &bt BT_PRV   &trans  &trans  &kp DEL
+   &kp TAB   &kp LS(LG(N5)) &trans &trans &trans &trans        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2 &trans  &trans  &kp GRAVE
+   &kp LCTRL &trans         &trans &trans &trans &trans        &trans        &trans        &trans       &trans  &trans  &kp RCTRL
                 &kp LGUI &mo 1 &mt LSHFT RET     &kp SPACE &mo 2 &kp RSHFT
                         >;
                 };
