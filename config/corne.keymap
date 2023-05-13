@@ -13,11 +13,6 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
    &lt 3 ESC &kp Y &kp L &kp O   &kp V &kp SEMI &kp SQT &kp B  &kp I     &kp D   &kp K  &kp BSPC
    &kp TAB   &kp F &kp R &kp E   &kp S &kp W    &kp Q   &kp N  &kp A     &kp T   &kp U  &kp DEL
@@ -26,43 +21,28 @@
                         >;
                 };
                 lower_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp LC(GRAVE)  &kp LA(QMARK) &kp QMARK    &kp LA(N1)  &kp EXCL    &kp F11      &kp F12 &trans  &trans &trans &trans  &kp BSPC
    &kp LG(GRAVE)  &kp N7        &kp N5       &kp N3      &kp N1      &kp N9       &kp N0  &kp N2  &kp N4 &kp N6 &kp N8  &kp DEL
-   &kp LCTRL      &kp F7        &kp F5       &kp F3      &kp F1      &kp F9       &kp F10 &kp F2  &kp F4 &kp F6 &kp F8  &kp ESC
+   &kp LCTRL      &kp F7        &kp F5       &kp F3      &kp F1      &kp F9       &kp F10 &kp F2  &kp F4 &kp F6 &kp F8  &mt RCTRL ESC
                 &kp LGUI &mo 1 &mt LSHFT RET     &kp SPACE &mo 2 &kp RSHFT
                         >;
                 };
 
                 raise_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp ESC   &trans    &kp RBRC  &kp RBKT  &kp RPAR &kp DLLR      &kp EQUAL &kp LPAR  &kp LBKT  &kp LBRC  &kp STAR &kp DEL
+   &kp ESC   &trans    &kp RBKT  &kp RBRC  &kp RPAR &kp DLLR      &kp EQUAL &kp LPAR  &kp LBRC  &kp LBKT  &kp STAR &kp DEL
    &kp TAB   &trans    &kp LCTRL &kp LALT  &kp LGUI &trans        &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp AT   &kp GRAVE
-   &kp LCTRL &kp TILDE &kp PIPE  &kp AMPS  &kp HASH &kp CARET     &kp PLUS  &kp MINUS &kp UNDER &kp FSLH  &kp BSLH &kp RCTRL
+   &kp LCTRL &kp TILDE &kp PIPE  &kp AMPS  &kp HASH &kp CARET     &kp PLUS  &kp MINUS &kp UNDER &kp FSLH  &kp BSLH &mt RCTRL ESC
                 &kp LGUI &mo 1 &mt LSHFT RET     &kp SPACE &mo 2 &kp RSHFT
                         >;
                 };
 
                 commands_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &trans    &kp LS(LG(N4)) &trans &trans &trans &bt BT_CLR    &bt BT_CLR    &bt BT_NXT    &bt BT_PRV   &trans  &trans  &kp DEL
    &kp TAB   &kp LS(LG(N5)) &trans &trans &trans &trans        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2 &trans  &trans  &kp GRAVE
-   &kp LCTRL &trans         &trans &trans &trans &trans        &trans        &trans        &trans       &trans  &trans  &kp RCTRL
+   &kp LCTRL &trans         &trans &trans &trans &trans        &trans        &trans        &trans       &trans  &trans  &mt RCTRL ESC
                 &kp LGUI &mo 1 &mt LSHFT RET     &kp SPACE &mo 2 &kp RSHFT
                         >;
                 };
